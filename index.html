@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicália</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="text__header">
+            <h1 class="h1__title">Vitrine Musicália</h1>
+            <p>Liste & Venda seus álbums favoritos!</p>
+        </div>
+    </header>
+    <main class="container__main">
+        <section class="container__form">
+            <h2>Adicione seu álbum!</h2>
+            <form action="" method="post" id="form-albums">
+                <label for="nome">Nome do Álbum:</label>
+                <input type="text" id="nome" data-nome required>
+                <label for="artista">Nome do Artista:</label>
+                <input type="text" id="artista" data-artista required>
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" data-preco required>
+                <div class="image__upload">
+                    <img src="./assets/img/vinyl.png" alt="vinyl" class="img__vinyl">
+                    <div class="flex column url__img">
+                        <label for="url__vinyl">URL da Capa do Álbum:</label>
+                        <input type="url" id="url__vinyl" name="imagem__vinyl" class="input__url" placeholder="https://exemplo.com/capa.jpg" data-imagem required>
+                    </div>
+                </div>
+                <div class="flex buttons__form">
+                    <button class="button__register" type="submit" form="form-albums" value="submit">Cadastrar</button>
+                    <button class="button__clean" type="reset" form="form-albums">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section class="container__products">
+            <h2>Álbuns disponíveis:</h2>
+            <ul class="albums__products" id="albums__products">
+                <!-- <li>
+                    <figure class="figure__container">
+                        <div class="div__img__product">
+                            <img src="./assets/img/pet sounds.jpg" alt="" class="img__product">
+                        </div>
+                        <img src="./assets/img/garbage-trash-svgrepo-com.svg" alt="" class="icon__trash">
+                        <figcaption>
+                            <p class="album__title">Pet Sounds</p>
+                            <p>The Beach Boys</p>
+                            <div class="flex buy">
+                                <button class="button__buy">Comprar</button>
+                                <p class="album__price">$ 32.00</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="figure__container">
+                        <div class="div__img__product">
+                            <img src="./assets/img/sgt. pepper's.jpg" alt="" class="img__product">
+                        </div>
+                        <img src="./assets/img/garbage-trash-svgrepo-com.svg" alt="" class="icon__trash">
+                        <figcaption>
+                            <p class="album__title">Sgt Pepper's Lonely Hearts Club Band</p>
+                            <p>The Beatles</p>
+                            <div class="flex buy">
+                                <button class="button__buy">Comprar</button>
+                                <p class="album__price">$ 32.00</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="figure__container">
+                        <div class="div__img__product">
+                            <img src="./assets/img/best sinatra.jpg" alt="" class="img__product">
+                        </div>
+                        <img src="./assets/img/garbage-trash-svgrepo-com.svg" alt="" class="icon__trash">
+                        <figcaption>
+                            <p class="album__title">Nothing But The Best</p>
+                            <p>Frank Sinatra</p>
+                            <div class="flex buy">
+                                <button class="button__buy">Comprar</button>
+                                <p class="album__price">$ 32.00</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="figure__container">
+                        <div class="div__img__product">
+                            <img src="./assets/img/hymn mono.jpg" alt="" class="img__product" id="img__product">
+                        </div>
+                        <img src="./assets/img/garbage-trash-svgrepo-com.svg" alt="" class="icon__trash">
+                        <figcaption>
+                            <p class="album__title" id="album__title">Hymn to the Immortal Wind</p>
+                            <p id="artist__title">Mono</p>
+                            <div class="flex buy">
+                                <button class="button__buy">Comprar</button>
+                                <p class="album__price" id="album__price">$ 32.00</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li> -->
+            </ul>
+        </section>        
+    </main>
+    <footer>
+        <p>Desenvolvido por Duffie.</p>
+        <p>2024</p>
+    </footer>
+    <script src="./assets/js/connection.js" type="module"></script>
+    <script src="./assets/js/listAlbums.js" type="module"></script>
+    <script src="./assets/js/deleteAlbum.js" type="module"></script>
+    <script src="./assets/js/form.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "nome": "Pet Sounds",
+      "artista": "The Beach Boys",
+      "preco": "27.00",
+      "imagem": "./assets/img/pet sounds.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Sgt Pepper's Lonely Hearts Club Band",
+      "artista": "The Beatles",
+      "preco": "32.00",
+      "imagem": "./assets/img/sgt. pepper's.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Nothing But The Best",
+      "artista": "Frank Sinatra",
+      "preco": "32.00",
+      "imagem": "./assets/img/best sinatra.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Hymn to the Immortal Wind",
+      "artista": "Mono",
+      "preco": "32.00",
+      "imagem": "./assets/img/hymn mono.jpg"
+    }
+  ]
+}
